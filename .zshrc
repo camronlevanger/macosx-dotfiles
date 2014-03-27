@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="afowler"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -45,7 +45,7 @@ export UPDATE_ZSH_DAYS=30
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git python ruby postgres golang vagrant virtualenvwrapper laravel git-extras brew django github pip composer sublime tmux xcode)
+plugins=(git python ruby golang vagrant laravel git-extras brew github composer sublime tmux)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -66,4 +66,18 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# include common exports and alias
+source ~/.shrc
+
+# Aliases
+alias gitcore="git"
+alias gs="git status"
+alias gp="git pull"
+alias gcb="git checkout -b"
+alias gpo="git pull origin"
+alias gc="git checkout"
+alias ad="arc diff"
+alias ga="git add"
+alias gcm="git commit -m"
 
