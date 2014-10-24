@@ -52,6 +52,9 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Documents/workspace
+source /usr/local/bin/virtualenvwrapper.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
@@ -80,4 +83,6 @@ alias gc="git checkout"
 alias ad="arc diff"
 alias ga="git add"
 alias gcm="git commit -m"
-
+alias sta="cd ~/Documents/workspace/sta/"
+alias psn="cd ~/Documents/workspace/PSNotificationServer/"
+alias ps="cd ~/Documents/workspace/PowerStandings/"
